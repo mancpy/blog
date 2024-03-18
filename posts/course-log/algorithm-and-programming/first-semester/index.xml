@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>@mancpy</title>
+    <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/</link>
+    <description>Recent content on @mancpy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Mar 2024 07:34:45 -0300</lastBuildDate>
+    <atom:link href="https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Applying Knowledge - Class 8</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/6788c63b/</link>
+      <pubDate>Mon, 18 Mar 2024 07:34:45 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/6788c63b/</guid>
+      <description>Create a modular Python program that uses lists to determine the most fuel-efficient car model.&#xA;The program should consist of the following functions:&#xA;input_car(): Prompts the user to input four car models from the keyboard. input_consumption(): Allows the user to enter the fuel consumption for each car model in liters per kilometer. efficient(): Returns the model of the most fuel-efficient car. Note that the car model and its consumption should be stored in the same list but in separate arrays (one for cars and one for consumption).</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 7</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/b87a17d1/</link>
+      <pubDate>Mon, 18 Mar 2024 06:02:13 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/b87a17d1/</guid>
+      <description>Create a Python function named paymentValue to determine the amount due for a bill, including any applicable late fees.&#xA;The function paymentValue that you will create takes two parameters: the original bill amount and the number of days the payment is overdue. It then calculates and returns the payment amount due. The calculation is done as follows:&#xA;If there are no days overdue, the full bill amount is due. If there are days overdue, a fine of three percent of the bill amount is added, along with a daily interest of 0.</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 6 (part 2)</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/1259b35f/</link>
+      <pubDate>Mon, 18 Mar 2024 04:13:48 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/1259b35f/</guid>
+      <description>Write a Python program that accepts a positive integer within the range of 0 to 10 (inclusive) and displays the multiplication table for that number from 1 to 10.&#xA;The input must be validated to ensure it is a number between 0 and 10 (inclusive). If the input is out of this range, the program will display the message INVALID VALUE and will prompt for the input again until a valid number is provided.</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 6 (part 1)</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/fdfc4c0b/</link>
+      <pubDate>Sun, 17 Mar 2024 22:32:03 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/fdfc4c0b/</guid>
+      <description>Create a Python program that reads an integer and ensures it is a positive number, then calculates and displays its divisors.&#xA;The input value must be validated because this program only accepts positive numbers. If the input value is out of range, the program will display the message INVALID VALUE and will prompt for input again until a valid number is provided.&#xA;The output will list the divisors of the input number, each on a new line, following the examples provided.</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 5</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/324a5f5c/</link>
+      <pubDate>Sun, 17 Mar 2024 18:53:34 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/324a5f5c/</guid>
+      <description>Create a Python program that requests the number of students in a specific class.&#xA;After receiving this information, the user should enter the average grade for each student. The program will then display the message CONGRATULATIONS YOU HAVE BEEN APPROVED for students with an average grade of 6.0 or higher.&#xA;Additionally, the program should calculate and display the overall class average after all the data has been input.&#xA;Note: If the number of students in the class is zero, the program should display the following message: THERE WAS NO PROCESSING.</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 2</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/d2c5edf0/</link>
+      <pubDate>Sun, 17 Mar 2024 05:59:15 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/d2c5edf0/</guid>
+      <description>Write a Python program that receives the cost (value in Real) of a theatrical show and the price per ticket (value in Real) for this show. This program must calculate and display:&#xA;Requirements: a) The minimum number of tickets that must be sold to at least cover the cost of the show. b) The number of tickets that must be sold to achieve a profit of 23 percent. Note: The numbers of tickets to be calculated should be integers.</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 3</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/abfa225d/</link>
+      <pubDate>Sun, 17 Mar 2024 05:59:00 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/abfa225d/</guid>
+      <description>Write a Python program to solve the following problem:&#xA;The program must receive an integer typed by the user and display a message:&#xA;If the number typed by the user is divisible by both three (3) and five (5) simultaneously, the message will display: The number is divisible by 3 and 5. If the number typed by the user is not divisible by both three (3) and five (5) at the same time, the message will display: The number is not divisible by 3 and 5.</description>
+    </item>
+    <item>
+      <title>Applying Knowledge - Class 4</title>
+      <link>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/51dbde31/</link>
+      <pubDate>Sun, 17 Mar 2024 05:59:00 -0300</pubDate>
+      <guid>https://ataraxia.dev/posts/course-log/algorithm-and-programming/first-semester/51dbde31/</guid>
+      <description>Write a Python program that, given the age of an athlete typed by the user, displays a message from the column CATEGORY, just as shown in the table below, where the category depends on the age input by the user.&#xA;Note The CATEGORY must be displayed exactly as shown in the table below:&#xA;CATEGORY AGE NOT ELIGIBLE TO BE AN ATHLETE Less than 5 years CHILD A Between 5 and 7 years CHILD B Between 8 and 10 years JUNIOR A Between 11 and 13 years JUNIOR B Between 14 and 17 years SENIOR 18 years and older Input: Athelete&amp;rsquo;s age Output: CATEGORY, according to the athlete&amp;rsquo;s age as indicated in the table above.</description>
+    </item>
+  </channel>
+</rss>

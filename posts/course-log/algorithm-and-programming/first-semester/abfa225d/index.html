@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Write a Python program to solve the following problem:
+The program must receive an integer typed by the user and display a message:
+If the number typed by the user is divisible by both three (3) and five (5) simultaneously, the message will display: The number is divisible by 3 and 5. If the number typed by the user is not divisible by both three (3) and five (5) at the same time, the message will display: The number is not divisible by 3 and 5.">  
+
+  <title>
+    
+      Applying Knowledge - Class 3
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.c5af9bae99b4a3d315b9f39305ffff27e9c3383fbbfd8b5fcaf2237667021a333a982fb958d1813a720b0a660b14022337553ae1ca93ef2ee17c4ae628ac19cb.css" integrity="sha512-xa&#43;brpm0o9MVufOTBf//J&#43;nDOD&#43;7/YtfyvIjdmcCGjM6mC&#43;5WNGBOnILCmYLFAIjN1U64cqT7y7hfErmKKwZyw==" />
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+
+<article>
+    <p class="post-meta">
+        <time datetime="2024-03-17 05:59:00 -0300 -03">
+            2024-03-17
+        </time>
+    </p>
+
+    <h1>Applying Knowledge - Class 3</h1>
+
+    
+
+    <p>Write a Python program to solve the following problem:</p>
+<p>The program must receive an integer typed by the user and display a message:</p>
+<ul>
+<li>If the number typed by the user is divisible by both three (3) and five (5) simultaneously, the message will display: <strong>The number is divisible by 3 and 5</strong>.</li>
+<li>If the number typed by the user is not divisible by both three (3) and five (5) at the same time, the message will display: <strong>The number is not divisible by 3 and 5</strong>.</li>
+</ul>
+<p>Ensure to display the messages exactly as indicated above.</p>
+<h2 id="input">Input:</h2>
+<ul>
+<li>An integer number.</li>
+</ul>
+<h2 id="output">Output:</h2>
+<ol>
+<li>If the number typed by the user is divisible by 3 and 5 simultaneously, display the message: The number is divisible by 3 and 5.</li>
+<li>If the number typed by the user is not divisible by 3 and 5 at the same time, print out the message: The number is not divisible by 3 and 5.</li>
+</ol>
+<h3 id="sample-inputsoutputs">Sample Inputs/Outputs:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span> py baz.py
+</span></span><span style="display:flex;"><span><span style="color:#666">15</span>
+</span></span><span style="display:flex;"><span>The number is divisible by <span style="color:#666">3</span> and <span style="color:#666">5</span>
+</span></span><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span> py baz.py 
+</span></span><span style="display:flex;"><span><span style="color:#666">25</span>
+</span></span><span style="display:flex;"><span>The number is not divisible by <span style="color:#666">3</span> and <span style="color:#666">5</span>
+</span></span><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span>
+</span></span></code></pre></div><hr>
+<h3 id="solution">SOLUTION:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#666">=</span> <span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>())
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">if</span> x<span style="color:#666">%</span><span style="color:#666">15</span> <span style="color:#666">==</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;O número é divisível por 3 e 5&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;O número não é divisível por 3 e 5&#39;</span>)
+</span></span></code></pre></div><h3 id="for-fun">for fun:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(<span style="color:#a2f;font-weight:bold">lambda</span> x: <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;O número é divisível por 3 e 5&#39;</span> <span style="color:#a2f;font-weight:bold">if</span> x<span style="color:#666">%</span><span style="color:#666">15</span> <span style="color:#666">==</span> <span style="color:#666">0</span> <span style="color:#a2f;font-weight:bold">else</span> <span style="color:#b44">&#39;O número não é divisível por 3 e 5&#39;</span>))(<span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>()))
+</span></span></code></pre></div>
+</article>
+
+            </div>
+        </main>
+    </body></html>

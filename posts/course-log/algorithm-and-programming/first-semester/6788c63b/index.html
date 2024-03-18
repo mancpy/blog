@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Create a modular Python program that uses lists to determine the most fuel-efficient car model.
+The program should consist of the following functions:
+input_car(): Prompts the user to input four car models from the keyboard. input_consumption(): Allows the user to enter the fuel consumption for each car model in liters per kilometer. efficient(): Returns the model of the most fuel-efficient car. Note that the car model and its consumption should be stored in the same list but in separate arrays (one for cars and one for consumption).">  
+
+  <title>
+    
+      Applying Knowledge - Class 8
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.c5af9bae99b4a3d315b9f39305ffff27e9c3383fbbfd8b5fcaf2237667021a333a982fb958d1813a720b0a660b14022337553ae1ca93ef2ee17c4ae628ac19cb.css" integrity="sha512-xa&#43;brpm0o9MVufOTBf//J&#43;nDOD&#43;7/YtfyvIjdmcCGjM6mC&#43;5WNGBOnILCmYLFAIjN1U64cqT7y7hfErmKKwZyw==" />
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+
+<article>
+    <p class="post-meta">
+        <time datetime="2024-03-18 07:34:45 -0300 -03">
+            2024-03-18
+        </time>
+    </p>
+
+    <h1>Applying Knowledge - Class 8</h1>
+
+    
+
+    <p>Create a modular Python program that uses lists to determine the most fuel-efficient car model.</p>
+<p>The program should consist of the following functions:</p>
+<ul>
+<li><code>input_car()</code>: Prompts the user to input four car models from the keyboard.</li>
+<li><code>input_consumption()</code>: Allows the user to enter the fuel consumption for each car model in liters per kilometer.</li>
+<li><code>efficient()</code>: Returns the model of the most fuel-efficient car. Note that the car model and its consumption should be stored in the same list but in separate arrays (one for cars and one for consumption).</li>
+</ul>
+<p>Data input should be conducted in the following order:</p>
+<ul>
+<li>The user types in the model of each car, one per line, in sequence.</li>
+<li>Then, the user enters the consumption data for each of the four cars, one per line.</li>
+</ul>
+<p>The program will then display the model of the most fuel-efficient car, which is the one with the lowest fuel consumption value.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
+</span></span><span style="display:flex;"><span>    input_car()
+</span></span><span style="display:flex;"><span>    input_consumption()
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(efficient())
+</span></span><span style="display:flex;"><span>main()
+</span></span></code></pre></div><h2 id="input">Input:</h2>
+<ol>
+<li>Four car models, each entered on a new line.</li>
+<li>Fuel consumption for each of the four cars, entered on a new line.</li>
+</ol>
+<h2 id="output">Output:</h2>
+<ul>
+<li>The model of the most fuel-efficient car.</li>
+</ul>
+<h3 id="sample-inputsoutputs">Sample Inputs/Outputs:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span> py baz.py
+</span></span><span style="display:flex;"><span>JEEP
+</span></span><span style="display:flex;"><span>AUDI
+</span></span><span style="display:flex;"><span>BMW
+</span></span><span style="display:flex;"><span>JAGUAR
+</span></span><span style="display:flex;"><span><span style="color:#666">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">12</span>
+</span></span><span style="display:flex;"><span>AUDI
+</span></span><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span>
+</span></span></code></pre></div><hr>
+<h3 id="solution">SOLUTION:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">entrada_carro</span>():
+</span></span><span style="display:flex;"><span>    carros <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> _ <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">4</span>):
+</span></span><span style="display:flex;"><span>        c <span style="color:#666">=</span> <span style="color:#a2f">input</span>()
+</span></span><span style="display:flex;"><span>        carros<span style="color:#666">.</span>append(c)
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> carros
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">entrada_consumo</span>():
+</span></span><span style="display:flex;"><span>    consumos <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> _ <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">4</span>):
+</span></span><span style="display:flex;"><span>        i <span style="color:#666">=</span> <span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>())
+</span></span><span style="display:flex;"><span>        consumos<span style="color:#666">.</span>append(i)
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> consumos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">economico</span>(modelos, consumos):
+</span></span><span style="display:flex;"><span>    indice <span style="color:#666">=</span> consumos<span style="color:#666">.</span>index(<span style="color:#a2f">min</span>(consumos))
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> modelos[indice]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
+</span></span><span style="display:flex;"><span>    modelos <span style="color:#666">=</span> entrada_carro()
+</span></span><span style="display:flex;"><span>    consumos <span style="color:#666">=</span> entrada_consumo()
+</span></span><span style="display:flex;"><span>    modelo_economico <span style="color:#666">=</span> economico(modelos, consumos)
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(modelo_economico)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main()
+</span></span></code></pre></div>
+</article>
+
+            </div>
+        </main>
+    </body></html>

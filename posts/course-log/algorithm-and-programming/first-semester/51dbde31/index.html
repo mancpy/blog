@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Write a Python program that, given the age of an athlete typed by the user, displays a message from the column CATEGORY, just as shown in the table below, where the category depends on the age input by the user.
+Note The CATEGORY must be displayed exactly as shown in the table below:
+CATEGORY AGE NOT ELIGIBLE TO BE AN ATHLETE Less than 5 years CHILD A Between 5 and 7 years CHILD B Between 8 and 10 years JUNIOR A Between 11 and 13 years JUNIOR B Between 14 and 17 years SENIOR 18 years and older Input: Athelete&rsquo;s age Output: CATEGORY, according to the athlete&rsquo;s age as indicated in the table above.">  
+
+  <title>
+    
+      Applying Knowledge - Class 4
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.c5af9bae99b4a3d315b9f39305ffff27e9c3383fbbfd8b5fcaf2237667021a333a982fb958d1813a720b0a660b14022337553ae1ca93ef2ee17c4ae628ac19cb.css" integrity="sha512-xa&#43;brpm0o9MVufOTBf//J&#43;nDOD&#43;7/YtfyvIjdmcCGjM6mC&#43;5WNGBOnILCmYLFAIjN1U64cqT7y7hfErmKKwZyw==" />
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+
+<article>
+    <p class="post-meta">
+        <time datetime="2024-03-17 05:59:00 -0300 -03">
+            2024-03-17
+        </time>
+    </p>
+
+    <h1>Applying Knowledge - Class 4</h1>
+
+    
+
+    <p>Write a Python program that, given the age of an athlete typed by the user, displays a message from the column CATEGORY, just as shown in the table below, where the category depends on the age input by the user.</p>
+<p><strong>Note</strong> The <strong>CATEGORY</strong> must be displayed exactly as shown in the table below:</p>
+<table>
+<thead>
+<tr>
+<th><strong>CATEGORY</strong></th>
+<th><strong>AGE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOT ELIGIBLE TO BE AN ATHLETE</td>
+<td>Less than 5 years</td>
+</tr>
+<tr>
+<td>CHILD A</td>
+<td>Between 5 and 7 years</td>
+</tr>
+<tr>
+<td>CHILD B</td>
+<td>Between 8 and 10 years</td>
+</tr>
+<tr>
+<td>JUNIOR A</td>
+<td>Between 11 and 13 years</td>
+</tr>
+<tr>
+<td>JUNIOR B</td>
+<td>Between 14 and 17 years</td>
+</tr>
+<tr>
+<td>SENIOR</td>
+<td>18 years and older</td>
+</tr>
+</tbody>
+</table>
+<h2 id="input">Input:</h2>
+<ul>
+<li>Athelete&rsquo;s age</li>
+</ul>
+<h2 id="output">Output:</h2>
+<ul>
+<li>CATEGORY, according to the athlete&rsquo;s age as indicated in the table above.</li>
+</ul>
+<h3 id="sample-inputsoutputs">Sample Inputs/Outputs:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span> py baz.py
+</span></span><span style="display:flex;"><span><span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>NOT ELEGIBLE TO BE AN ATHLETE
+</span></span><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span> py baz.py
+</span></span><span style="display:flex;"><span><span style="color:#666">5</span>
+</span></span><span style="display:flex;"><span>CHILD A
+</span></span><span style="display:flex;"><span>foo<span style="">@</span><span style="color:#a0a000">bar</span>:<span style="color:#666">~</span><span style="">$</span>
+</span></span></code></pre></div><hr>
+<h3 id="solution">SOLUTION:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#666">=</span> <span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">if</span> x <span style="color:#666">&lt;</span> <span style="color:#666">5</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;NÃO TEM IDADE PARA SER ATLETA&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">elif</span> <span style="color:#666">5</span> <span style="color:#666">&lt;=</span> x <span style="color:#666">&lt;=</span> <span style="color:#666">7</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;INFANTIL A&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">elif</span> <span style="color:#666">8</span> <span style="color:#666">&lt;=</span> x <span style="color:#666">&lt;=</span> <span style="color:#666">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;INFANTIL B&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">elif</span> <span style="color:#666">11</span> <span style="color:#666">&lt;=</span> x <span style="color:#666">&lt;=</span> <span style="color:#666">13</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;JUVENIL A&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">elif</span> <span style="color:#666">14</span> <span style="color:#666">&lt;=</span> x <span style="color:#666">&lt;=</span> <span style="color:#666">17</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;JUVENIL B&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#39;SÊNIOR&#39;</span>)
+</span></span></code></pre></div><h3 id="for-fun">for fun:</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a2f">print</span>(<span style="color:#a2f">next</span>(c <span style="color:#a2f;font-weight:bold">for</span> c, a <span style="color:#a2f;font-weight:bold">in</span> (<span style="color:#a2f;font-weight:bold">lambda</span> x: {<span style="color:#b44">&#39;NÃO TEM IDADE SUFICIENTE&#39;</span>: x<span style="color:#666">&lt;</span><span style="color:#666">5</span>, <span style="color:#b44">&#39;INFANTIL A&#39;</span>: <span style="color:#666">5</span><span style="color:#666">&lt;=</span>x<span style="color:#666">&lt;=</span><span style="color:#666">7</span>, <span style="color:#b44">&#39;INFANTIL B&#39;</span>: <span style="color:#666">8</span><span style="color:#666">&lt;=</span>x<span style="color:#666">&lt;=</span><span style="color:#666">10</span>, <span style="color:#b44">&#39;JUVENIL A&#39;</span>: <span style="color:#666">11</span><span style="color:#666">&lt;=</span>x<span style="color:#666">&lt;=</span><span style="color:#666">13</span>, <span style="color:#b44">&#39;JUVENIL B&#39;</span>: <span style="color:#666">14</span><span style="color:#666">&lt;=</span>x<span style="color:#666">&lt;=</span><span style="color:#666">17</span>, <span style="color:#b44">&#39;SÊNIOR&#39;</span>: x<span style="color:#666">&gt;</span><span style="color:#666">17</span>})(<span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>()))<span style="color:#666">.</span>items()<span style="color:#a2f;font-weight:bold">if</span> a))
+</span></span></code></pre></div>
+</article>
+
+            </div>
+        </main>
+    </body></html>
